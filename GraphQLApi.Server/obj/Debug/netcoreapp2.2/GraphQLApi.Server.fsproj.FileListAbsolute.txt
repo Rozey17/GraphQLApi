@@ -1,0 +1,10 @@
+C:\Users\ROZEYNIOR\source\repos\GraphQLApi\GraphQLApi.Server\obj\Debug\netcoreapp2.2\GraphQLApi.Server.fsprojAssemblyReference.cache
+C:\Users\ROZEYNIOR\source\repos\GraphQLApi\GraphQLApi.Server\obj\Debug\netcoreapp2.2\GraphQLApi.Server.AssemblyInfoInputs.cache
+C:\Users\ROZEYNIOR\source\repos\GraphQLApi\GraphQLApi.Server\obj\Debug\netcoreapp2.2\GraphQLApi.Server.AssemblyInfo.fs
+c:\Users\ROZEYNIOR\source\repos\GraphQLApi\GraphQLApi.Server\bin\Debug\netcoreapp2.2\GraphQLApi.Server.deps.json
+c:\Users\ROZEYNIOR\source\repos\GraphQLApi\GraphQLApi.Server\bin\Debug\netcoreapp2.2\GraphQLApi.Server.runtimeconfig.json
+c:\Users\ROZEYNIOR\source\repos\GraphQLApi\GraphQLApi.Server\bin\Debug\netcoreapp2.2\GraphQLApi.Server.runtimeconfig.dev.json
+c:\Users\ROZEYNIOR\source\repos\GraphQLApi\GraphQLApi.Server\bin\Debug\netcoreapp2.2\GraphQLApi.Server.dll
+c:\Users\ROZEYNIOR\source\repos\GraphQLApi\GraphQLApi.Server\bin\Debug\netcoreapp2.2\GraphQLApi.Server.pdb
+c:\Users\ROZEYNIOR\source\repos\GraphQLApi\GraphQLApi.Server\obj\Debug\netcoreapp2.2\GraphQLApi.Server.dll
+c:\Users\ROZEYNIOR\source\repos\GraphQLApi\GraphQLApi.Server\obj\Debug\netcoreapp2.2\GraphQLApi.Server.pdb
