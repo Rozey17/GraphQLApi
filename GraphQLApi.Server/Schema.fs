@@ -1,39 +1,14 @@
 ﻿namespace GraphQLApi.Server
 
 open System
+open Domain 
 open FSharp.Data.GraphQL
 open FSharp.Data.GraphQL.Types
-
-type Book =
-    { Id : Guid
-      Name : string
-      Genre : string }
-
-type Author =
-    { Id : Guid
-      Name : string
-      Age : int }
-
-type AddBookInput =
-    { Name : string
-      Genre : string }
-
-type AddAuthorInput =
-    { Name : string
-      Age : int }
 
 type Root =
     { ClientId : System.Guid }
 
-module Db =
- open System.Collections.Generic
-
- let private bookStorage = new Dictionary<int, Book>()
- let saveBook () =
-  bookStorage.Values :> seq<Book>
-
-module Schema =
-      
+module Schema =    
     let mutable books =
         [ { Id = System.Guid.NewGuid()
             Name = "The Richest Man In Babylon"
