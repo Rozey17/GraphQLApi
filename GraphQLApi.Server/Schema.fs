@@ -25,6 +25,13 @@ type AddAuthorInput =
 type Root =
     { ClientId : System.Guid }
 
+module Db =
+ open System.Collections.Generic
+
+ let private bookStorage = new Dictionary<int, Book>()
+ let saveBook () =
+  bookStorage.Values :> seq<Book>
+
 module Schema =
       
     let mutable books =
