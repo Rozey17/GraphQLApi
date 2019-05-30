@@ -1,10 +1,16 @@
 ﻿module Events
-open Domain
 open System
 
 type Event =
-|BookAdded of Book * Guid
-|BookUpdated of Book *Guid
-|BookDeleted of Book * Guid
+|BookAdded of Guid * string
+|BookUpdated of Guid * string
+|BookDeleted of Guid
+with 
+  override x.ToString() =
+   match x with
+   |BookAdded(i,n) -> "New Book " + n + "added (id : "+ i.ToString() + ")"
+   |BookUpdated(i,n) -> "Book updated with new name" + n + "(Id: " + i.ToString() +")"
+   |BookDeleted(i) -> "Book deleted (id: " + i.ToString() + ")"
+   
 
 

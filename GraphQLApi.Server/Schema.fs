@@ -2,20 +2,27 @@
 
 open System
 open Domain 
+open Commands
+open CommandHandlers
 open FSharp.Data.GraphQL
 open FSharp.Data.GraphQL.Types
 
 type Root =
     { ClientId : System.Guid }
 
+type AddBookInput =
+    { Name : string
+      Genre : string }
+
+type AddAuthorInput =
+    { Name : string
+      Age : int }
+
 module Schema =    
-    let mutable books =
-        [ { Id = System.Guid.NewGuid()
-            Name = "The Richest Man In Babylon"
-            Genre = "Philosophy" }
-          { Id = System.Guid.NewGuid()
-            Name = "As A Man Thinketh"
-            Genre = "Philosophy" } ]
+    let id1 = System.Guid.NewGuid()
+
+    let book1 = AddBook(id1,"my book","philosophy") |> Handle
+       
 
     let mutable authors =
         [ { Id = System.Guid.NewGuid()
@@ -68,7 +75,7 @@ module Schema =
 
                    Define.Field
                        ("age", Int, "The age of the author.",
-                        fun _ (x : Author) -> x.Age) ]) // les types sont toujours en majuscules
+                        fun _ (x : Author) -> x.Age) ]) // les primitives types sont toujours en majuscules
 
     let RootType =
         Define.Object<Root>
